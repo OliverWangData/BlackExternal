@@ -4,18 +4,12 @@
 	"VersionName" : "1.0",
 	"FriendlyName" : "Black External",
 	"Description" : "External libraries build pipeline for Black Megacorp",
-	"CreatedBy" : "Black Megacorp",
-	"DocsURL" : "https://github.com/BlackMegacorp/BlackExternal",
+	"CreatedBy" : "OliverWangData",
+	"DocsURL" : "https://github.com/OliverWangData/BlackExternal",
 	"Category" : "Library",
 	"EnabledByDefault" : true,
 	"CanContainContent" : true,
 	"IsBetaVersion": false,
 	"MarketplaceURL" : "",
-	"SupportURL": "",
-	  "Dependencies": [
-		{
-		  "Name": "BlackCore",
-		  "Enabled": true
-		}
-	  ]
+	"SupportURL": ""
 }
