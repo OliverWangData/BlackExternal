@@ -1,0 +1,38 @@
+general:
+    cmake_version: "3.31.0"
+
+freetype:
+    "2.13.3": 
+        type : static
+        include_output_folder: include/freetype2
+
+harfbuzz:
+    "11.2.1":
+        type : static
+        cmake_flags: 
+            HB_HAVE_FREETYPE: ON
+
+msdfgen:
+    "1.12":
+        type : static
+        cmake_flags:
+            MSDFGEN_CORE_ONLY: OFF
+            MSDFGEN_BUILD_STANDALONE: OFF
+            MSDFGEN_INSTALL: ON
+            MSDFGEN_DISABLE_SVG: ON
+            MSDFGEN_DISABLE_PNG: ON
+            MSDFGEN_USE_VCPKG: OFF
+            MSDFGEN_USE_SKIA: OFF
+            # Required by Unreal Engine
+            MSDFGEN_DYNAMIC_RUNTIME: ON
+        
+utf8proc:
+    "2.10.0": 
+        type : static
+        public_definitions:
+            - "UTF8PROC_STATIC=1"
+    
+fastcppcsvparser:
+    master:
+        type : header
+        include_source_folder: ""

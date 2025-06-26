@@ -1,0 +1,21 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"FriendlyName" : "Black External",
+	"Description" : "External libraries build pipeline for Black Megacorp",
+	"CreatedBy" : "Black Megacorp",
+	"DocsURL" : "https://github.com/BlackMegacorp/BlackExternal",
+	"Category" : "Library",
+	"EnabledByDefault" : true,
+	"CanContainContent" : true,
+	"IsBetaVersion": false,
+	"MarketplaceURL" : "",
+	"SupportURL": "",
+	  "Dependencies": [
+		{
+		  "Name": "BlackCore",
+		  "Enabled": true
+		}
+	  ]
+}
