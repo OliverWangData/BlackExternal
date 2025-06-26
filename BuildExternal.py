@@ -271,7 +271,7 @@ def sync_directory(src, dst):
 
 def log(msg: str, error: bool = False, spaced: bool = False):
     timestamp = datetime.datetime.now().strftime("%H:%M:%S")
-    prefix = "[BuildThirdParty]"
+    prefix = "[BuildExternal]"
     
     color = "\033[91m" if error else "\033[92m"  # Red for errors, green for info
     level = "[ERROR]" if error else "[INFO]"
@@ -308,6 +308,6 @@ platform_configs = {
 build_configs = ["Release", "RelWithDebInfo", "Debug"]
 
 if __name__ == "__main__":
-    log("Running BuildThirdParty.py")
+    log("Running BuildExternal.py")
     main()
-    log("Third party module builds complete.")
+    log("External module builds complete.")
